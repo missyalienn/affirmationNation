@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6406CF71E39805F00646D4B /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6406CF61E39805F00646D4B /* CustomColors.swift */; };
+		F6D8547B1E2FBABB00A0EE9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8547A1E2FBABB00A0EE9A /* AppDelegate.swift */; };
+		F6D8547D1E2FBABB00A0EE9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8547C1E2FBABB00A0EE9A /* ViewController.swift */; };
+		F6D854801E2FBABB00A0EE9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6D8547E1E2FBABB00A0EE9A /* Main.storyboard */; };
+		F6D854821E2FBABB00A0EE9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6D854811E2FBABB00A0EE9A /* Assets.xcassets */; };
+		F6D854851E2FBABB00A0EE9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6D854831E2FBABB00A0EE9A /* LaunchScreen.storyboard */; };
+		F6D854901E2FBABB00A0EE9A /* AffirmationCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8548F1E2FBABB00A0EE9A /* AffirmationCardsTests.swift */; };
+		F6D8549B1E2FBABB00A0EE9A /* AffirmationCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8549A1E2FBABB00A0EE9A /* AffirmationCardsUITests.swift */; };
+		F6D854A91E2FCD2000A0EE9A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D854A81E2FCD2000A0EE9A /* Card.swift */; };
+		F6D854AB1E2FD63E00A0EE9A /* AffirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D854AA1E2FD63E00A0EE9A /* AffirmationViewController.swift */; };
+		F6D854AD1E2FD6CB00A0EE9A /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D854AC1E2FD6CB00A0EE9A /* Deck.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6D8548C1E2FBABB00A0EE9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6D8546F1E2FBABA00A0EE9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6D854761E2FBABA00A0EE9A;
+			remoteInfo = AffirmationCards;
+		};
+		F6D854971E2FBABB00A0EE9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6D8546F1E2FBABA00A0EE9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6D854761E2FBABA00A0EE9A;
+			remoteInfo = AffirmationCards;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F6406CF61E39805F00646D4B /* CustomColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		F6D854771E2FBABB00A0EE9A /* AffirmationCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AffirmationCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6D8547A1E2FBABB00A0EE9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F6D8547C1E2FBABB00A0EE9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F6D8547F1E2FBABB00A0EE9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6D854811E2FBABB00A0EE9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6D854841E2FBABB00A0EE9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F6D854861E2FBABB00A0EE9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6D8548B1E2FBABB00A0EE9A /* AffirmationCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AffirmationCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6D8548F1E2FBABB00A0EE9A /* AffirmationCardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationCardsTests.swift; sourceTree = "<group>"; };
+		F6D854911E2FBABB00A0EE9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6D854961E2FBABB00A0EE9A /* AffirmationCardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AffirmationCardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6D8549A1E2FBABB00A0EE9A /* AffirmationCardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationCardsUITests.swift; sourceTree = "<group>"; };
+		F6D8549C1E2FBABB00A0EE9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6D854A81E2FCD2000A0EE9A /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		F6D854AA1E2FD63E00A0EE9A /* AffirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AffirmationViewController.swift; sourceTree = "<group>"; };
+		F6D854AC1E2FD6CB00A0EE9A /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6D854741E2FBABA00A0EE9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6D854881E2FBABB00A0EE9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6D854931E2FBABB00A0EE9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6406CF11E397D9900646D4B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F6406CF21E397DA500646D4B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F6D854AC1E2FD6CB00A0EE9A /* Deck.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F6D8546E1E2FBABA00A0EE9A = {
+			isa = PBXGroup;
+			children = (
+				F6D854791E2FBABB00A0EE9A /* AffirmationCards */,
+				F6D8548E1E2FBABB00A0EE9A /* AffirmationCardsTests */,
+				F6D854991E2FBABB00A0EE9A /* AffirmationCardsUITests */,
+				F6D854781E2FBABB00A0EE9A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6D854781E2FBABB00A0EE9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6D854771E2FBABB00A0EE9A /* AffirmationCards.app */,
+				F6D8548B1E2FBABB00A0EE9A /* AffirmationCardsTests.xctest */,
+				F6D854961E2FBABB00A0EE9A /* AffirmationCardsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6D854791E2FBABB00A0EE9A /* AffirmationCards */ = {
+			isa = PBXGroup;
+			children = (
+				F6406CF21E397DA500646D4B /* View */,
+				F6406CF11E397D9900646D4B /* Model */,
+				F6D8547A1E2FBABB00A0EE9A /* AppDelegate.swift */,
+				F6D8547C1E2FBABB00A0EE9A /* ViewController.swift */,
+				F6D854A81E2FCD2000A0EE9A /* Card.swift */,
+				F6D854AA1E2FD63E00A0EE9A /* AffirmationViewController.swift */,
+				F6D8547E1E2FBABB00A0EE9A /* Main.storyboard */,
+				F6D854811E2FBABB00A0EE9A /* Assets.xcassets */,
+				F6406CF61E39805F00646D4B /* CustomColors.swift */,
+				F6D854831E2FBABB00A0EE9A /* LaunchScreen.storyboard */,
+				F6D854861E2FBABB00A0EE9A /* Info.plist */,
+			);
+			path = AffirmationCards;
+			sourceTree = "<group>";
+		};
+		F6D8548E1E2FBABB00A0EE9A /* AffirmationCardsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6D8548F1E2FBABB00A0EE9A /* AffirmationCardsTests.swift */,
+				F6D854911E2FBABB00A0EE9A /* Info.plist */,
+			);
+			path = AffirmationCardsTests;
+			sourceTree = "<group>";
+		};
+		F6D854991E2FBABB00A0EE9A /* AffirmationCardsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F6D8549A1E2FBABB00A0EE9A /* AffirmationCardsUITests.swift */,
+				F6D8549C1E2FBABB00A0EE9A /* Info.plist */,
+			);
+			path = AffirmationCardsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6D854761E2FBABA00A0EE9A /* AffirmationCards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6D8549F1E2FBABB00A0EE9A /* Build configuration list for PBXNativeTarget "AffirmationCards" */;
+			buildPhases = (
+				F6D854731E2FBABA00A0EE9A /* Sources */,
+				F6D854741E2FBABA00A0EE9A /* Frameworks */,
+				F6D854751E2FBABA00A0EE9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AffirmationCards;
+			productName = AffirmationCards;
+			productReference = F6D854771E2FBABB00A0EE9A /* AffirmationCards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6D8548A1E2FBABB00A0EE9A /* AffirmationCardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6D854A21E2FBABB00A0EE9A /* Build configuration list for PBXNativeTarget "AffirmationCardsTests" */;
+			buildPhases = (
+				F6D854871E2FBABB00A0EE9A /* Sources */,
+				F6D854881E2FBABB00A0EE9A /* Frameworks */,
+				F6D854891E2FBABB00A0EE9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6D8548D1E2FBABB00A0EE9A /* PBXTargetDependency */,
+			);
+			name = AffirmationCardsTests;
+			productName = AffirmationCardsTests;
+			productReference = F6D8548B1E2FBABB00A0EE9A /* AffirmationCardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F6D854951E2FBABB00A0EE9A /* AffirmationCardsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6D854A51E2FBABB00A0EE9A /* Build configuration list for PBXNativeTarget "AffirmationCardsUITests" */;
+			buildPhases = (
+				F6D854921E2FBABB00A0EE9A /* Sources */,
+				F6D854931E2FBABB00A0EE9A /* Frameworks */,
+				F6D854941E2FBABB00A0EE9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6D854981E2FBABB00A0EE9A /* PBXTargetDependency */,
+			);
+			name = AffirmationCardsUITests;
+			productName = AffirmationCardsUITests;
+			productReference = F6D854961E2FBABB00A0EE9A /* AffirmationCardsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6D8546F1E2FBABA00A0EE9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Missy Allan";
+				TargetAttributes = {
+					F6D854761E2FBABA00A0EE9A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 57Z2TZGD3U;
+						ProvisioningStyle = Automatic;
+					};
+					F6D8548A1E2FBABB00A0EE9A = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F6D854761E2FBABA00A0EE9A;
+					};
+					F6D854951E2FBABB00A0EE9A = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F6D854761E2FBABA00A0EE9A;
+					};
+				};
+			};
+			buildConfigurationList = F6D854721E2FBABA00A0EE9A /* Build configuration list for PBXProject "AffirmationCards" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6D8546E1E2FBABA00A0EE9A;
+			productRefGroup = F6D854781E2FBABB00A0EE9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6D854761E2FBABA00A0EE9A /* AffirmationCards */,
+				F6D8548A1E2FBABB00A0EE9A /* AffirmationCardsTests */,
+				F6D854951E2FBABB00A0EE9A /* AffirmationCardsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6D854751E2FBABA00A0EE9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6D854851E2FBABB00A0EE9A /* LaunchScreen.storyboard in Resources */,
+				F6D854821E2FBABB00A0EE9A /* Assets.xcassets in Resources */,
+				F6D854801E2FBABB00A0EE9A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6D854891E2FBABB00A0EE9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6D854941E2FBABB00A0EE9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6D854731E2FBABA00A0EE9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6D8547D1E2FBABB00A0EE9A /* ViewController.swift in Sources */,
+				F6D854AB1E2FD63E00A0EE9A /* AffirmationViewController.swift in Sources */,
+				F6D854AD1E2FD6CB00A0EE9A /* Deck.swift in Sources */,
+				F6D854A91E2FCD2000A0EE9A /* Card.swift in Sources */,
+				F6406CF71E39805F00646D4B /* CustomColors.swift in Sources */,
+				F6D8547B1E2FBABB00A0EE9A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6D854871E2FBABB00A0EE9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6D854901E2FBABB00A0EE9A /* AffirmationCardsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6D854921E2FBABB00A0EE9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6D8549B1E2FBABB00A0EE9A /* AffirmationCardsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6D8548D1E2FBABB00A0EE9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6D854761E2FBABA00A0EE9A /* AffirmationCards */;
+			targetProxy = F6D8548C1E2FBABB00A0EE9A /* PBXContainerItemProxy */;
+		};
+		F6D854981E2FBABB00A0EE9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6D854761E2FBABA00A0EE9A /* AffirmationCards */;
+			targetProxy = F6D854971E2FBABB00A0EE9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F6D8547E1E2FBABB00A0EE9A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6D8547F1E2FBABB00A0EE9A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F6D854831E2FBABB00A0EE9A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6D854841E2FBABB00A0EE9A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6D8549D1E2FBABB00A0EE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F6D8549E1E2FBABB00A0EE9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6D854A01E2FBABB00A0EE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 57Z2TZGD3U;
+				INFOPLIST_FILE = AffirmationCards/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Flatiron-School.AffirmationCards";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F6D854A11E2FBABB00A0EE9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 57Z2TZGD3U;
+				INFOPLIST_FILE = AffirmationCards/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Flatiron-School.AffirmationCards";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F6D854A31E2FBABB00A0EE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AffirmationCardsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Flatiron-School.AffirmationCardsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AffirmationCards.app/AffirmationCards";
+			};
+			name = Debug;
+		};
+		F6D854A41E2FBABB00A0EE9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AffirmationCardsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Flatiron-School.AffirmationCardsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AffirmationCards.app/AffirmationCards";
+			};
+			name = Release;
+		};
+		F6D854A61E2FBABB00A0EE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = AffirmationCardsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Flatiron-School.AffirmationCardsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AffirmationCards;
+			};
+			name = Debug;
+		};
+		F6D854A71E2FBABB00A0EE9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = AffirmationCardsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Flatiron-School.AffirmationCardsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AffirmationCards;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6D854721E2FBABA00A0EE9A /* Build configuration list for PBXProject "AffirmationCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6D8549D1E2FBABB00A0EE9A /* Debug */,
+				F6D8549E1E2FBABB00A0EE9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6D8549F1E2FBABB00A0EE9A /* Build configuration list for PBXNativeTarget "AffirmationCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6D854A01E2FBABB00A0EE9A /* Debug */,
+				F6D854A11E2FBABB00A0EE9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6D854A21E2FBABB00A0EE9A /* Build configuration list for PBXNativeTarget "AffirmationCardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6D854A31E2FBABB00A0EE9A /* Debug */,
+				F6D854A41E2FBABB00A0EE9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6D854A51E2FBABB00A0EE9A /* Build configuration list for PBXNativeTarget "AffirmationCardsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6D854A61E2FBABB00A0EE9A /* Debug */,
+				F6D854A71E2FBABB00A0EE9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6D8546F1E2FBABA00A0EE9A /* Project object */;
+}
