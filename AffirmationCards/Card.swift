@@ -31,7 +31,6 @@ class Card {
     }
 
     
-    
 }
 
 // Always express models as singular

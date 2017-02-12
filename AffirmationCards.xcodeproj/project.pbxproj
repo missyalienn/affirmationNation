@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A403DC05CAF23832316D824 /* Pods_AffirmationCards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F6339132EA1DA59A280395 /* Pods_AffirmationCards.framework */; };
 		F6406CF71E39805F00646D4B /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6406CF61E39805F00646D4B /* CustomColors.swift */; };
+		F640862A1E481CCA005ECE49 /* QuotesAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64086291E481CCA005ECE49 /* QuotesAPIClient.swift */; };
+		F64EA14A1E50F8FC00A44547 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64EA1491E50F8FC00A44547 /* LoginView.swift */; };
 		F6D8547B1E2FBABB00A0EE9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8547A1E2FBABB00A0EE9A /* AppDelegate.swift */; };
 		F6D8547D1E2FBABB00A0EE9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8547C1E2FBABB00A0EE9A /* ViewController.swift */; };
 		F6D854801E2FBABB00A0EE9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6D8547E1E2FBABB00A0EE9A /* Main.storyboard */; };
@@ -18,6 +21,7 @@
 		F6D854A91E2FCD2000A0EE9A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D854A81E2FCD2000A0EE9A /* Card.swift */; };
 		F6D854AB1E2FD63E00A0EE9A /* AffirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D854AA1E2FD63E00A0EE9A /* AffirmationViewController.swift */; };
 		F6D854AD1E2FD6CB00A0EE9A /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D854AC1E2FD6CB00A0EE9A /* Deck.swift */; };
+		F6E03FBA1E511468004D9B37 /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E03FB91E511468004D9B37 /* CustomFonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +42,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15F6339132EA1DA59A280395 /* Pods_AffirmationCards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AffirmationCards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B983B134CB91FDD0FEB0F01 /* Pods_AffirmationCardsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AffirmationCardsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A5CB04F162C8FE4382E5A4D /* Pods-AffirmationCards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AffirmationCards.release.xcconfig"; path = "Pods/Target Support Files/Pods-AffirmationCards/Pods-AffirmationCards.release.xcconfig"; sourceTree = "<group>"; };
+		9C8209C3E214F85D14CA1574 /* Pods-AffirmationCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AffirmationCards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AffirmationCards/Pods-AffirmationCards.debug.xcconfig"; sourceTree = "<group>"; };
+		DA9B5D880DB2867A57F2E0F6 /* Pods_AffirmationCardsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AffirmationCardsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6406CF61E39805F00646D4B /* CustomColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		F64086291E481CCA005ECE49 /* QuotesAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesAPIClient.swift; sourceTree = "<group>"; };
+		F64EA1491E50F8FC00A44547 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = ../LoginView.swift; sourceTree = "<group>"; };
 		F6D854771E2FBABB00A0EE9A /* AffirmationCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AffirmationCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D8547A1E2FBABB00A0EE9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F6D8547C1E2FBABB00A0EE9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F6D8547C1E2FBABB00A0EE9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = AffirmationCards/ViewController.swift; sourceTree = "<group>"; };
 		F6D8547F1E2FBABB00A0EE9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6D854811E2FBABB00A0EE9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6D854841E2FBABB00A0EE9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,8 +64,9 @@
 		F6D8549A1E2FBABB00A0EE9A /* AffirmationCardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationCardsUITests.swift; sourceTree = "<group>"; };
 		F6D8549C1E2FBABB00A0EE9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6D854A81E2FCD2000A0EE9A /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		F6D854AA1E2FD63E00A0EE9A /* AffirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AffirmationViewController.swift; sourceTree = "<group>"; };
+		F6D854AA1E2FD63E00A0EE9A /* AffirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AffirmationViewController.swift; path = AffirmationCards/AffirmationViewController.swift; sourceTree = "<group>"; };
 		F6D854AC1E2FD6CB00A0EE9A /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		F6E03FB91E511468004D9B37 /* CustomFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A403DC05CAF23832316D824 /* Pods_AffirmationCards.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,9 +95,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		952F87CDA46FDBE27AABD256 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15F6339132EA1DA59A280395 /* Pods_AffirmationCards.framework */,
+				1B983B134CB91FDD0FEB0F01 /* Pods_AffirmationCardsTests.framework */,
+				DA9B5D880DB2867A57F2E0F6 /* Pods_AffirmationCardsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEEA0BF4A5CF5009C6849E09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C8209C3E214F85D14CA1574 /* Pods-AffirmationCards.debug.xcconfig */,
+				3A5CB04F162C8FE4382E5A4D /* Pods-AffirmationCards.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F6406CF11E397D9900646D4B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F64086291E481CCA005ECE49 /* QuotesAPIClient.swift */,
+				F6D854AC1E2FD6CB00A0EE9A /* Deck.swift */,
+				F6D854A81E2FCD2000A0EE9A /* Card.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -92,9 +127,20 @@
 		F6406CF21E397DA500646D4B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F6D854AC1E2FD6CB00A0EE9A /* Deck.swift */,
+				F64EA1491E50F8FC00A44547 /* LoginView.swift */,
+				F6E03FB91E511468004D9B37 /* CustomFonts.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		F6C75CC41E493C4000A1FC4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F6D8547C1E2FBABB00A0EE9A /* ViewController.swift */,
+				F6D854AA1E2FD63E00A0EE9A /* AffirmationViewController.swift */,
+			);
+			name = Controller;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		F6D8546E1E2FBABA00A0EE9A = {
@@ -104,6 +150,8 @@
 				F6D8548E1E2FBABB00A0EE9A /* AffirmationCardsTests */,
 				F6D854991E2FBABB00A0EE9A /* AffirmationCardsUITests */,
 				F6D854781E2FBABB00A0EE9A /* Products */,
+				DEEA0BF4A5CF5009C6849E09 /* Pods */,
+				952F87CDA46FDBE27AABD256 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,12 +168,10 @@
 		F6D854791E2FBABB00A0EE9A /* AffirmationCards */ = {
 			isa = PBXGroup;
 			children = (
-				F6406CF21E397DA500646D4B /* View */,
+				F6C75CC41E493C4000A1FC4A /* Controller */,
 				F6406CF11E397D9900646D4B /* Model */,
+				F6406CF21E397DA500646D4B /* View */,
 				F6D8547A1E2FBABB00A0EE9A /* AppDelegate.swift */,
-				F6D8547C1E2FBABB00A0EE9A /* ViewController.swift */,
-				F6D854A81E2FCD2000A0EE9A /* Card.swift */,
-				F6D854AA1E2FD63E00A0EE9A /* AffirmationViewController.swift */,
 				F6D8547E1E2FBABB00A0EE9A /* Main.storyboard */,
 				F6D854811E2FBABB00A0EE9A /* Assets.xcassets */,
 				F6406CF61E39805F00646D4B /* CustomColors.swift */,
@@ -160,9 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6D8549F1E2FBABB00A0EE9A /* Build configuration list for PBXNativeTarget "AffirmationCards" */;
 			buildPhases = (
+				2BAB9DD59B531CEBF5BB01BF /* [CP] Check Pods Manifest.lock */,
 				F6D854731E2FBABA00A0EE9A /* Sources */,
 				F6D854741E2FBABA00A0EE9A /* Frameworks */,
 				F6D854751E2FBABA00A0EE9A /* Resources */,
+				89BE60949D833A26F1F05DE0 /* [CP] Embed Pods Frameworks */,
+				C6126C26E1FE114DED4C19B4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -283,6 +332,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2BAB9DD59B531CEBF5BB01BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		89BE60949D833A26F1F05DE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AffirmationCards/Pods-AffirmationCards-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6126C26E1FE114DED4C19B4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AffirmationCards/Pods-AffirmationCards-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F6D854731E2FBABA00A0EE9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -291,8 +388,11 @@
 				F6D8547D1E2FBABB00A0EE9A /* ViewController.swift in Sources */,
 				F6D854AB1E2FD63E00A0EE9A /* AffirmationViewController.swift in Sources */,
 				F6D854AD1E2FD6CB00A0EE9A /* Deck.swift in Sources */,
+				F6E03FBA1E511468004D9B37 /* CustomFonts.swift in Sources */,
 				F6D854A91E2FCD2000A0EE9A /* Card.swift in Sources */,
 				F6406CF71E39805F00646D4B /* CustomColors.swift in Sources */,
+				F640862A1E481CCA005ECE49 /* QuotesAPIClient.swift in Sources */,
+				F64EA14A1E50F8FC00A44547 /* LoginView.swift in Sources */,
 				F6D8547B1E2FBABB00A0EE9A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +543,7 @@
 		};
 		F6D854A01E2FBABB00A0EE9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C8209C3E214F85D14CA1574 /* Pods-AffirmationCards.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 57Z2TZGD3U;
@@ -456,6 +557,7 @@
 		};
 		F6D854A11E2FBABB00A0EE9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A5CB04F162C8FE4382E5A4D /* Pods-AffirmationCards.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 57Z2TZGD3U;

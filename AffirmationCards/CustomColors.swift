@@ -9,26 +9,16 @@
 import Foundation
 import UIKit
 
-// MARK: Theme Colors
+ //MARK: Theme Colors
 extension UIColor {
-//    public static let themeLightBlue = UIColor(red: 106 / 255, green: 138 / 255, blue: 166 / 255, alpha: 1)
-//    public static let themeMediumBlue = UIColor(red: 59 / 255, green: 75 / 255, blue: 89 / 255, alpha: 1)
-//    public static let themeDarkBlue = UIColor(red: 20 / 255, green: 31 / 255, blue: 38 / 255, alpha: 1)
-//    public static let themeRed = UIColor(red: 242 / 255, green: 82 / 255, blue: 68 / 255, alpha: 1)
-//    
-//    public static let themeMarine = UIColor(red: 34 / 255, green: 91 / 255, blue: 102 / 255, alpha: 1)
-//    public static let themeTeal = UIColor(red: 23 / 255, green: 163 / 255, blue: 165 / 255, alpha: 1)
-//    public static let themeGrass = UIColor(red: 141 / 255, green: 191 / 255, blue: 103 / 255, alpha: 1)
-//    public static let themeSunshine = UIColor(red: 252 / 255, green: 203 / 255, blue: 95 / 255, alpha: 1)
-//    public static let themeCoral = UIColor(red: 252 / 255, green: 110 / 255, blue: 89 / 255, alpha: 1)
-//    public static let themeWhite = UIColor(red: 242 / 255, green: 242 / 255, blue: 242 / 255, alpha: 1)
-//    
-    public static let themeSunshine = UIColor(red: 255, green: 225, blue: 83, alpha: 1)
-    public static let themeCreamsicle = UIColor(red: 255, green: 188, blue: 104, alpha: 1)
-    public static let themeCoral = UIColor(red: 241, green: 142, blue: 133, alpha: 1)
-    public static let themePink =  UIColor(red: 197, green: 109, blue: 157, alpha: 1)
-    public static let themePurple = UIColor(red: 153, green: 103, blue: 164, alpha: 1)
-}
+        
+        public static let themeSunshine = UIColor(red:1.00, green:0.88, blue:0.33, alpha:1.0)
+        public static let themeCreamsicle = UIColor(red:1.00, green:0.74, blue:0.41, alpha:1.0)
+        public static let themeCoral = UIColor(red:0.95, green:0.56, blue:0.52, alpha:1.0)
+        public static let themePink =  UIColor(red:0.77, green:0.43, blue:0.62, alpha:1.0)
+        public static let themePurple = UIColor(red:0.60, green:0.40, blue:0.64, alpha:1.0)
+    }
+
 
 // MARK: Gradients
 extension CAGradientLayer {

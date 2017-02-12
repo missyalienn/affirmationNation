@@ -1,0 +1,6 @@
+framework module Pods_AffirmationCards {
+  umbrella header "Pods-AffirmationCards-umbrella.h"
+
+  export *
+  module * { export * }
+}

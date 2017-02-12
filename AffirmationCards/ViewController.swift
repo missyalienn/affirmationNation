@@ -9,23 +9,66 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var quoteBodyLabel: UILabel!
+    
+    @IBOutlet weak var quoteAuthorLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor.themeSunshine
+        
+        
+        configure()
+        constrain()
+        
+    
+        QuoteAPIClient.getDataFromAPI { (data) in
+            
+                self.quoteBodyLabel.text = "\(data["quoteText"]!)"
+                self.quoteAuthorLabel.text = "\(data["quoteAuthor"]!)"
+        
+        }
+
     }
+    
+    
+    func configure() {
+    //configure views and elements here
+      self.view.addSubview(quoteBodyLabel)
+      self.view.addSubview(quoteAuthorLabel)
+
+    }
+    
+    
+    func constrain() {
 
     
-    
-    
-    
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
+    
+    
+    
+    @IBAction func quoteButtonPressed(_ sender: Any) {
+        
+        QuoteAPIClient.getDataFromAPI { (data) in
+            
+            DispatchQueue.main.async {
+                self.quoteBodyLabel.text = "\(data["quoteText"]!)"
+                self.quoteAuthorLabel.text = "\(data["quoteAuthor"]!)"
+                
+            }
+        }
+    }
 
 }
+
+
+
+
+
+
+
+
+
 
