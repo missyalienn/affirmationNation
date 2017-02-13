@@ -11,6 +11,10 @@
 		F6406CF71E39805F00646D4B /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6406CF61E39805F00646D4B /* CustomColors.swift */; };
 		F640862A1E481CCA005ECE49 /* QuotesAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64086291E481CCA005ECE49 /* QuotesAPIClient.swift */; };
 		F64EA14A1E50F8FC00A44547 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64EA1491E50F8FC00A44547 /* LoginView.swift */; };
+		F6694EC71E52500800DD71BD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6694EC61E52500800DD71BD /* LoginViewController.swift */; };
+		F6694EC91E5253F600DD71BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6694EC81E5253F600DD71BD /* GoogleService-Info.plist */; };
+		F69AA9AE1E5256E000FFA5F7 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69AA9AD1E5256E000FFA5F7 /* SignupView.swift */; };
+		F69AA9B01E5256F600FFA5F7 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69AA9AF1E5256F600FFA5F7 /* SignupViewController.swift */; };
 		F6D8547B1E2FBABB00A0EE9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8547A1E2FBABB00A0EE9A /* AppDelegate.swift */; };
 		F6D8547D1E2FBABB00A0EE9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8547C1E2FBABB00A0EE9A /* ViewController.swift */; };
 		F6D854801E2FBABB00A0EE9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6D8547E1E2FBABB00A0EE9A /* Main.storyboard */; };
@@ -50,6 +54,10 @@
 		F6406CF61E39805F00646D4B /* CustomColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		F64086291E481CCA005ECE49 /* QuotesAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesAPIClient.swift; sourceTree = "<group>"; };
 		F64EA1491E50F8FC00A44547 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = ../LoginView.swift; sourceTree = "<group>"; };
+		F6694EC61E52500800DD71BD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F6694EC81E5253F600DD71BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F69AA9AD1E5256E000FFA5F7 /* SignupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		F69AA9AF1E5256F600FFA5F7 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		F6D854771E2FBABB00A0EE9A /* AffirmationCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AffirmationCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D8547A1E2FBABB00A0EE9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6D8547C1E2FBABB00A0EE9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = AffirmationCards/ViewController.swift; sourceTree = "<group>"; };
@@ -128,16 +136,27 @@
 			isa = PBXGroup;
 			children = (
 				F64EA1491E50F8FC00A44547 /* LoginView.swift */,
-				F6E03FB91E511468004D9B37 /* CustomFonts.swift */,
+				F69AA9AD1E5256E000FFA5F7 /* SignupView.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		F69AA9AC1E5256B700FFA5F7 /* Custom FIles */ = {
+			isa = PBXGroup;
+			children = (
+				F6406CF61E39805F00646D4B /* CustomColors.swift */,
+				F6E03FB91E511468004D9B37 /* CustomFonts.swift */,
+			);
+			name = "Custom FIles";
 			sourceTree = "<group>";
 		};
 		F6C75CC41E493C4000A1FC4A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				F6D8547C1E2FBABB00A0EE9A /* ViewController.swift */,
+				F6694EC61E52500800DD71BD /* LoginViewController.swift */,
 				F6D854AA1E2FD63E00A0EE9A /* AffirmationViewController.swift */,
+				F69AA9AF1E5256F600FFA5F7 /* SignupViewController.swift */,
 			);
 			name = Controller;
 			path = ..;
@@ -174,9 +193,10 @@
 				F6D8547A1E2FBABB00A0EE9A /* AppDelegate.swift */,
 				F6D8547E1E2FBABB00A0EE9A /* Main.storyboard */,
 				F6D854811E2FBABB00A0EE9A /* Assets.xcassets */,
-				F6406CF61E39805F00646D4B /* CustomColors.swift */,
+				F69AA9AC1E5256B700FFA5F7 /* Custom FIles */,
 				F6D854831E2FBABB00A0EE9A /* LaunchScreen.storyboard */,
 				F6D854861E2FBABB00A0EE9A /* Info.plist */,
+				F6694EC81E5253F600DD71BD /* GoogleService-Info.plist */,
 			);
 			path = AffirmationCards;
 			sourceTree = "<group>";
@@ -311,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6D854851E2FBABB00A0EE9A /* LaunchScreen.storyboard in Resources */,
+				F6694EC91E5253F600DD71BD /* GoogleService-Info.plist in Resources */,
 				F6D854821E2FBABB00A0EE9A /* Assets.xcassets in Resources */,
 				F6D854801E2FBABB00A0EE9A /* Main.storyboard in Resources */,
 			);
@@ -391,8 +412,11 @@
 				F6E03FBA1E511468004D9B37 /* CustomFonts.swift in Sources */,
 				F6D854A91E2FCD2000A0EE9A /* Card.swift in Sources */,
 				F6406CF71E39805F00646D4B /* CustomColors.swift in Sources */,
+				F69AA9B01E5256F600FFA5F7 /* SignupViewController.swift in Sources */,
 				F640862A1E481CCA005ECE49 /* QuotesAPIClient.swift in Sources */,
 				F64EA14A1E50F8FC00A44547 /* LoginView.swift in Sources */,
+				F6694EC71E52500800DD71BD /* LoginViewController.swift in Sources */,
+				F69AA9AE1E5256E000FFA5F7 /* SignupView.swift in Sources */,
 				F6D8547B1E2FBABB00A0EE9A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -550,7 +574,7 @@
 				DEVELOPMENT_TEAM = 57Z2TZGD3U;
 				INFOPLIST_FILE = AffirmationCards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Flatiron-School.AffirmationCards";
+				PRODUCT_BUNDLE_IDENTIFIER = FlatironSchool.AffirmationCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -565,7 +589,7 @@
 				DEVELOPMENT_TEAM = 57Z2TZGD3U;
 				INFOPLIST_FILE = AffirmationCards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Flatiron-School.AffirmationCards";
+				PRODUCT_BUNDLE_IDENTIFIER = FlatironSchool.AffirmationCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

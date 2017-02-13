@@ -7,16 +7,17 @@
 //
 
 import UIKit
-
+import Firebase
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    var window: UIWindow?
-
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+class AppDelegate: UIResponder, UIApplicationDelegate {        
+        var window: UIWindow?
+        
+        private func application(application: UIApplication,
+                         didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?)
+            -> Bool {
+                FIRApp.configure()
+                return true
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -42,5 +43,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
-}
+
 

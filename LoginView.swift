@@ -122,18 +122,62 @@ class LoginView: UIView {
             $0.height.equalToSuperview().dividedBy(2.5)
         }
         
+        topView.addSubview(titleLabel)
+        titleLabel.snp.makeConstraints {
+            $0.leading.trailing.top.equalToSuperview()
+            $0.height.equalToSuperview().dividedBy(2.5)
+            
+        }
+        
+        
+        //Middle View 
+        addSubview(middleView)
+        middleView.snp.makeConstraints {
+            $0.leading.trailing.equalToSuperview()
+            $0.top.equalTo(topView.snp.bottom)
+            $0.height.equalToSuperview().dividedBy(2.1)
+
+        }
+        
+        middleView.addSubview(loginStackView)
+        loginStackView.snp.makeConstraints {
+            $0.center.equalToSuperview()
+            $0.width.equalToSuperview().dividedBy(1.3)
+            $0.height.equalToSuperview().dividedBy(1.5)
+        
+        }
+        
+        emailField.snp.makeConstraints {
+            $0.width.equalToSuperview()
+            
+        }
+        
+        passwordField.snp.makeConstraints {
+            $0.width.equalToSuperview()
+            
+        }
+        
+        //Bottom view 
+        
+        addSubview(bottomView)
+        bottomView.snp.makeConstraints {
+            $0.leading.trailing.bottom.equalToSuperview()
+            $0.top.equalTo(middleView.snp.bottom)
+        }
+        
+        bottomView.addSubview(noLoginStackView)
+        noLoginStackView.snp.makeConstraints {
+            $0.center.equalToSuperview()
+        }
         
         
         
-        
-        
+        }
         
     }
     
     
     
     
-    
-    
-}
+
 
