@@ -36,10 +36,29 @@ class SignupViewController: UIViewController {
     
     @IBAction func signupButtonTouched(_ sender: Any) {
         
+        guard let email = emailTextField.text, !email.isEmpty else {print ("Email cannot be empty."); return }
         
+        guard let password = passwordTextField.text, !password.isEmpty else {print ("Password can not be empty."); return}
         
-    }
-    
+        let ref = FIRDatabase.database().reference().root
+        
+        FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
+            if error == nil {
+                ref.child("users").child((user?.uid)!).setValue(email)
+                print("sign up button pressed. no errors.")
+            } else {
+                
+                if error != nil {
+                    print(error!)
+                }
+            }
+            
+        })
+        
+}
+
+
+}
     
     
     
@@ -69,4 +88,4 @@ class SignupViewController: UIViewController {
     }
     */
 
-}
+
