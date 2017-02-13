@@ -13,6 +13,14 @@ import Firebase
 
 class SignupViewController: UIViewController {
 
+    
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,8 +34,11 @@ class SignupViewController: UIViewController {
     
 
     
-    
-    
+    @IBAction func signupButtonTouched(_ sender: Any) {
+        
+        
+        
+    }
     
     
     
