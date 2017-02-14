@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-class Card {
+class AffirmationCard {
     
     let cardTitle: String
     var cardImageURL: String // don't store a UIImage in a class.

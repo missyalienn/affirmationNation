@@ -12,80 +12,99 @@ import Firebase
 
 
 class SignupViewController: UIViewController {
-
+    
     
     
     @IBOutlet weak var emailTextField: UITextField!
     
     @IBOutlet weak var passwordTextField: UITextField!
     
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
+ 
     
     @IBAction func signupButtonTouched(_ sender: Any) {
         
-        guard let email = emailTextField.text, !email.isEmpty else {print ("Email cannot be empty."); return }
-        
-        guard let password = passwordTextField.text, !password.isEmpty else {print ("Password can not be empty."); return}
-        
-        let ref = FIRDatabase.database().reference().root
-        
-        FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
-            if error == nil {
-                ref.child("users").child((user?.uid)!).setValue(email)
-                print("sign up button pressed. no errors.")
-            } else {
+        if emailTextField.text == "" {
+            let alertController = UIAlertController(title: "Error", message: "Please enter your email and password", preferredStyle: .alert)
+            
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            
+            present(alertController, animated: true, completion: nil)
+            
+        } else {
+            FIRAuth.auth()?.createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
                 
-                if error != nil {
-                    print(error!)
+                if error == nil {
+                    print("You have successfully signed up")
+                    
+                } else {
+                    let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                    
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    alertController.addAction(defaultAction)
+                    
+                    self.present(alertController, animated: true, completion: nil)
+                }
+            }
+        }
+    }
+        
+    
+    
+    @IBAction func loginButtonTouched(_ sender: Any) {
+        
+        guard let email = emailTextField.text, let password = passwordTextField.text else {return}
+        
+        FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
+           
+            if let error = error {
+                print(error.localizedDescription)
+                print("Error signing in.")
+            }else {
+                if (FIRAuth.auth()?.currentUser) != nil{
+                    print("User is current user. No errors")
+                    self.performSegue(withIdentifier: "showQuote", sender: self)
+                
+
                 }
             }
             
+            
+            
         })
         
-}
-
-
-}
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
+    
+        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showQuote" {
+            
+            if let dest = segue.destination as? ViewController{
+//                guard let email = emailTextField.text else {return}
+//                dest.userEmail = email // do not try to set text in a segue.
+            }
+        }
+        
+    }
+    
+        
+}
+    
+    
+
 
 

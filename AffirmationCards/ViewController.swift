@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var userEmail : String? 
+    
     @IBOutlet weak var quoteBodyLabel: UILabel!
     
     @IBOutlet weak var quoteAuthorLabel: UILabel!
