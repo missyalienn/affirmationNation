@@ -10,10 +10,10 @@ import Foundation
 import CoreData
 
 
-class CoreDataStack {
+class DataStore {
     
     
-    static let shared = CoreDataStack()
+    static let shared = DataStore()
     private init() {}
     
     
@@ -64,13 +64,26 @@ class CoreDataStack {
         }
     }
     
-    func fetchCards() {
-        
-    }
+//    func fetchCards() {
+//        let managedContext = store.persistentContainer.viewContext
+//        let fetchRequest: NSFetchRequest<Card> = Card.fetchRequest()
+//        do {
+//            self.cards = try managedContext.fetch(fetchRequest)
+//            print(cards.count)
+//           // self.tableView.reloadData()
+//        }catch{
+//         print(error.localizedDescription)
+//            
+//        }
+//        
+//    }
     
     func fetchFavorites() -> [Card] {
         //if cards.isEqual to 0 then fetchCards()
-        //else just filter out the cards that are favorited
+//        //else just filter out the cards that are favorited
+//        if cards.count == 0 {
+//        //    fetchCards()
+//        }else{
         var favCrds = [Card]()
         for card in self.cards {
             if card.favorited == true {
@@ -81,11 +94,9 @@ class CoreDataStack {
         
         
     }
+    
+    
+    }
 
-    
-    
-    
-    
-    
-    
-}
+
+

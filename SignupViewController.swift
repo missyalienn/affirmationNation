@@ -37,7 +37,7 @@ class SignupViewController: UIViewController {
     
     @IBAction func signupButtonTouched(_ sender: Any) {
         
-        if emailTextField.text == "" {
+        if (emailTextField.text == nil) || passwordTextField.text == "" {
             let alertController = UIAlertController(title: "Error", message: "Please enter your email and password", preferredStyle: .alert)
             
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
@@ -50,6 +50,7 @@ class SignupViewController: UIViewController {
                 
                 if error == nil {
                     print("You have successfully signed up")
+                    self.performSegue(withIdentifier: "showQuote", sender: self)
                     
                 } else {
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
@@ -92,8 +93,7 @@ class SignupViewController: UIViewController {
         
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showQuote" {
-            
-            if let dest = segue.destination as? ViewController{
+            if segue.destination is ViewController{
 //                guard let email = emailTextField.text else {return}
 //                dest.userEmail = email // do not try to set text in a segue.
             }
