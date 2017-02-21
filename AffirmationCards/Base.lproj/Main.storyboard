@@ -47,6 +47,14 @@
                                 <color key="textColor" red="0.80000000000000004" green="0.0" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nb9-Km-4xy">
+                                <rect key="frame" x="285" y="599" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="DPx-Uo-nWz" kind="show" id="ZqS-r7-1sH"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
@@ -57,6 +65,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="65" y="-516"/>
+        </scene>
+        <!--Affirmations View Controller-->
+        <scene sceneID="WFj-is-Hs6">
+            <objects>
+                <viewController id="DPx-Uo-nWz" customClass="AffirmationsViewController" customModule="AffirmationCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VmA-nn-hh9"/>
+                        <viewControllerLayoutGuide type="bottom" id="dm1-oY-n0t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SHg-tL-4i6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jlm-gD-JCl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="871" y="-513"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="urR-ir-h6N">
