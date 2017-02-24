@@ -13,7 +13,7 @@ import UIKit
 class AffirmationCard {
     
     let cardTitle: String
-    var cardImageURL: String // don't store a UIImage in a class.
+    //var cardImageURL: String // don't store a UIImage in a class.
     var cardBody: String
 
    
@@ -25,11 +25,16 @@ class AffirmationCard {
     init(cardTitle: String, cardImageURL: String, cardBody: String) {
         
         self.cardTitle = cardTitle
-        self.cardImageURL = cardImageURL
+        //self.cardImageURL = cardImageURL
         self.cardBody = cardBody
         
     }
 
+    
+    init(dict: [String: Any]) {
+        self.cardTitle = dict["affTitle"] as! String
+        self.cardBody = dict["affBody"] as! String
+    }
     
 }
 
