@@ -25,22 +25,49 @@ class AffirmationsViewController: UIViewController {
         print("hey im being called")
         AffAPIClient.readJSON { (affirmationCardArray) in
             
-            
+            //use instance of array of AffirmationCards equal to argument in function
             self.affirmationsArray = affirmationCardArray
-            
             
             let randomIndex = Int(arc4random_uniform(UInt32(self.affirmationsArray.count)))
             let randomCard = self.affirmationsArray[randomIndex]
             
             self.affTitleLabel.text = randomCard.cardTitle
             self.affBodyTextView.text = randomCard.cardBody
-            
-//            self.affTitleLabel.text = "\(data["affTitle"])"
-//            self.affBodyTextView.text = "\(data["affBody"])"
+        
         }
     
     }
+  
     
+
+    @IBAction func getNewAffirmationPressed(_ sender: Any) {
+        DispatchQueue.main.async {
+            AffAPIClient.readJSON(with: { (affirmationCardArray) in
+                self.affirmationsArray = affirmationCardArray
+                let randomIndex = Int(arc4random_uniform(UInt32(self.affirmationsArray.count)))
+                let randomCard = self.affirmationsArray[randomIndex]
+                
+                self.affTitleLabel.text = randomCard.cardTitle
+                self.affBodyTextView.text = randomCard.cardBody
+                
+            })
+            
+        }
+        
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //            self.affTitleLabel.text = "\(data["affTitle"])"
+    //            self.affBodyTextView.text = "\(data["affBody"])"
     
 //func readJSON() {
 //        print("reading")
