@@ -79,7 +79,6 @@ class SignupViewController: UIViewController {
                 if (FIRAuth.auth()?.currentUser) != nil{
                     print("User is current user. No errors")
                     self.performSegue(withIdentifier: "showQuote", sender: self)
-                
 
                 }
             }
@@ -90,7 +89,26 @@ class SignupViewController: UIViewController {
         
     }
     
+    
+    
+    
+    @IBAction func skipButtonTouched(_ sender: Any) {
         
+        self.performSegue(withIdentifier: "showQuote", sender: self)
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showQuote" {
             if segue.destination is ViewController{
