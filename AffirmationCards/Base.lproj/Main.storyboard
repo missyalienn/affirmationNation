@@ -54,7 +54,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
-                                <state key="normal" title="  ✨Get an affirmation✨"/>
+                                <state key="normal" title="  ✨Get an affirmation✨">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="DPx-Uo-nWz" kind="show" id="ZqS-r7-1sH"/>
                                 </connections>
@@ -99,21 +101,26 @@
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGj-7y-pDa">
                                 <rect key="frame" x="0.0" y="541" width="375" height="65"/>
-                                <color key="backgroundColor" red="1" green="0.88235294119999996" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.33762176510422598" green="0.7774409049658606" blue="0.68672325999756711" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="Ydh-Mm-P8N"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 <state key="normal" title="Affirm It.">
-                                    <color key="titleColor" red="0.56470588239999997" green="0.070588235289999995" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.40000000000000002" green="0.0" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="v1w-4G-4bF" kind="show" id="TJB-mm-FUy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WY-xD-zWX">
                                 <rect key="frame" x="0.0" y="602" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.88235294119999996" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
-                                <state key="normal" title="  ✨Get a new affirmation✨"/>
+                                <state key="normal" title="  ✨Get a new affirmation✨">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.0" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="getNewAffirmationPressed:" destination="DPx-Uo-nWz" eventType="touchUpInside" id="N3s-Bp-gFW"/>
                                 </connections>
@@ -141,6 +148,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jlm-gD-JCl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="869.60000000000002" y="-513.19340329835086"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qot-by-dD5">
+            <objects>
+                <viewController id="v1w-4G-4bF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eDD-dJ-h1W"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jta-3U-fWA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4TB-3b-8m8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.90000000000000002" contentMode="scaleAspectFit" fixedFrame="YES" text="Start typing your notes/thoughts here. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2vb-zB-k61">
+                                <rect key="frame" x="8" y="218" width="359" height="378"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.88235294119999996" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.54175771579999998" green="0.4368807938" blue="0.87196621190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES" flightNumber="YES" lookupSuggestion="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NKg-dt-7Mt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672.8" y="-513.19340329835086"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="urR-ir-h6N">
