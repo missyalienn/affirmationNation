@@ -35,7 +35,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.40000000000000002" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="🙌  Get a quote  🙌 ">
+                                <state key="normal" title="Get a quote  ">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -85,22 +85,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="affTitleLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nx7-6f-lfw">
-                                <rect key="frame" x="29" y="128" width="330" height="113"/>
+                                <rect key="frame" x="29" y="128" width="330" height="58"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="113" id="QAg-P3-srP"/>
+                                    <constraint firstAttribute="height" constant="58" id="QAg-P3-srP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="affTextLabel" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Kmn-Eu-t8T">
-                                <rect key="frame" x="29" y="297" width="330" height="297"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="affTextLabel" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Kmn-Eu-t8T">
+                                <rect key="frame" x="29" y="239" width="330" height="331"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGj-7y-pDa">
-                                <rect key="frame" x="0.0" y="541" width="375" height="65"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGj-7y-pDa">
+                                <rect key="frame" x="0.0" y="602" width="375" height="65"/>
                                 <color key="backgroundColor" red="0.33762176510422598" green="0.7774409049658606" blue="0.68672325999756711" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="Ydh-Mm-P8N"/>
@@ -114,7 +114,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WY-xD-zWX">
-                                <rect key="frame" x="0.0" y="602" width="375" height="65"/>
+                                <rect key="frame" x="0.0" y="538" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.88235294119999996" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
@@ -129,10 +129,10 @@
                         <color key="backgroundColor" red="0.94509803920000002" green="0.5568627451" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Nx7-6f-lfw" firstAttribute="top" secondItem="VmA-nn-hh9" secondAttribute="bottom" constant="108" id="BuW-tn-rf0"/>
-                            <constraint firstItem="Kmn-Eu-t8T" firstAttribute="top" secondItem="Nx7-6f-lfw" secondAttribute="bottom" constant="87" id="GYf-lu-ZIa"/>
+                            <constraint firstItem="Kmn-Eu-t8T" firstAttribute="top" secondItem="Nx7-6f-lfw" secondAttribute="bottom" constant="53" id="GYf-lu-ZIa"/>
                             <constraint firstAttribute="trailing" secondItem="sGj-7y-pDa" secondAttribute="trailing" id="P4W-17-bfa"/>
                             <constraint firstItem="Nx7-6f-lfw" firstAttribute="leading" secondItem="SHg-tL-4i6" secondAttribute="leadingMargin" constant="13" id="S44-71-3A7"/>
-                            <constraint firstItem="sGj-7y-pDa" firstAttribute="top" secondItem="Kmn-Eu-t8T" secondAttribute="bottom" constant="51" id="Ur3-W4-dAn"/>
+                            <constraint firstItem="sGj-7y-pDa" firstAttribute="top" secondItem="Kmn-Eu-t8T" secondAttribute="bottom" constant="32" id="Ur3-W4-dAn"/>
                             <constraint firstItem="sGj-7y-pDa" firstAttribute="bottom" secondItem="dm1-oY-n0t" secondAttribute="top" id="Wk2-Np-Sc4"/>
                             <constraint firstItem="Nx7-6f-lfw" firstAttribute="trailing" secondItem="SHg-tL-4i6" secondAttribute="trailingMargin" id="bNN-ob-bx4"/>
                             <constraint firstItem="Nx7-6f-lfw" firstAttribute="leading" secondItem="Kmn-Eu-t8T" secondAttribute="leading" id="dsR-YN-2Ux"/>
@@ -162,7 +162,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.90000000000000002" contentMode="scaleAspectFit" fixedFrame="YES" text="Start typing your notes/thoughts here. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2vb-zB-k61">
-                                <rect key="frame" x="8" y="218" width="359" height="378"/>
+                                <rect key="frame" x="8" y="168" width="359" height="424"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.88235294119999996" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.54175771579999998" green="0.4368807938" blue="0.87196621190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
