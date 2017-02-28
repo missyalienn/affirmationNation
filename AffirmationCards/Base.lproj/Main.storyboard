@@ -110,7 +110,7 @@
                                     <color key="titleColor" red="0.40000000000000002" green="0.0" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="v1w-4G-4bF" kind="show" id="TJB-mm-FUy"/>
+                                    <segue destination="cmy-4v-Z5D" kind="show" id="TJB-mm-FUy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WY-xD-zWX">
@@ -149,7 +149,7 @@
             </objects>
             <point key="canvasLocation" x="869.60000000000002" y="-513.19340329835086"/>
         </scene>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="qot-by-dD5">
             <objects>
                 <viewController id="v1w-4G-4bF" sceneMemberID="viewController">
@@ -161,8 +161,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.90000000000000002" contentMode="scaleAspectFit" fixedFrame="YES" text="Start typing your notes/thoughts here. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2vb-zB-k61">
-                                <rect key="frame" x="8" y="168" width="359" height="424"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.90000000000000002" contentMode="scaleAspectFit" fixedFrame="YES" text="Start typing your notes here. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2vb-zB-k61">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.88235294119999996" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.54175771579999998" green="0.4368807938" blue="0.87196621190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -173,10 +173,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="YhV-wj-RVg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NKg-dt-7Mt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1672.8" y="-513.19340329835086"/>
+            <point key="canvasLocation" x="2612" y="-513.19340329835086"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="urR-ir-h6N">
@@ -289,6 +290,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6P7-Jo-wUM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-740" y="-515.8920539730135"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="TJ2-fI-ow8">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="cmy-4v-Z5D" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Fnl-ec-8Aq">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="v1w-4G-4bF" kind="relationship" relationship="viewControllers" id="NtA-gB-Iwt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jMR-Rp-HLY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672.8" y="-513.19340329835086"/>
         </scene>
     </scenes>
     <resources>
