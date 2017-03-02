@@ -93,16 +93,18 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="affTextLabel" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Kmn-Eu-t8T">
-                                <rect key="frame" x="29" y="239" width="330" height="331"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="affTextLabel" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Kmn-Eu-t8T">
+                                <rect key="frame" x="29" y="239" width="330" height="264"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpg-hm-rV1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpg-hm-rV1">
                                 <rect key="frame" x="0.0" y="601" width="380" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.33762176510000003" green="0.77744090499999996" blue="0.68672325999999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="80m-W0-oY6"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 <state key="normal" title="Save">
                                     <color key="titleColor" red="0.40000000000000002" green="0.0" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -111,10 +113,12 @@
                                     <segue destination="aSD-dH-sYI" kind="show" id="8zG-hm-2O5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WY-xD-zWX">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WY-xD-zWX">
                                 <rect key="frame" x="0.0" y="535" width="375" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.88235294119999996" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="5nc-u5-cWo"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
                                 <state key="normal" title="  Get a new affirmation">
                                     <color key="titleColor" red="0.40000000000000002" green="0.0" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -126,11 +130,18 @@
                         </subviews>
                         <color key="backgroundColor" red="0.94509803920000002" green="0.5568627451" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5WY-xD-zWX" secondAttribute="trailing" id="6Aa-yv-Gqg"/>
                             <constraint firstItem="Nx7-6f-lfw" firstAttribute="top" secondItem="VmA-nn-hh9" secondAttribute="bottom" constant="108" id="BuW-tn-rf0"/>
+                            <constraint firstItem="Xpg-hm-rV1" firstAttribute="top" secondItem="5WY-xD-zWX" secondAttribute="bottom" constant="1" id="Eov-GS-EXK"/>
+                            <constraint firstItem="5WY-xD-zWX" firstAttribute="top" secondItem="Kmn-Eu-t8T" secondAttribute="bottom" constant="32" id="Ewj-Mi-tsF"/>
                             <constraint firstItem="Kmn-Eu-t8T" firstAttribute="top" secondItem="Nx7-6f-lfw" secondAttribute="bottom" constant="53" id="GYf-lu-ZIa"/>
+                            <constraint firstItem="5WY-xD-zWX" firstAttribute="leading" secondItem="SHg-tL-4i6" secondAttribute="leading" id="Ldq-aD-XJ7"/>
                             <constraint firstItem="Nx7-6f-lfw" firstAttribute="leading" secondItem="SHg-tL-4i6" secondAttribute="leadingMargin" constant="13" id="S44-71-3A7"/>
                             <constraint firstItem="Nx7-6f-lfw" firstAttribute="trailing" secondItem="SHg-tL-4i6" secondAttribute="trailingMargin" id="bNN-ob-bx4"/>
                             <constraint firstItem="Nx7-6f-lfw" firstAttribute="leading" secondItem="Kmn-Eu-t8T" secondAttribute="leading" id="dsR-YN-2Ux"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xpg-hm-rV1" secondAttribute="trailing" constant="-21" id="h2j-W3-lLr"/>
+                            <constraint firstItem="5WY-xD-zWX" firstAttribute="leading" secondItem="Xpg-hm-rV1" secondAttribute="leading" id="hDW-Gi-48V"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Xpg-hm-rV1" secondAttribute="bottom" constant="-4" id="hlc-px-Xdp"/>
                             <constraint firstItem="Nx7-6f-lfw" firstAttribute="trailing" secondItem="Kmn-Eu-t8T" secondAttribute="trailing" id="jl9-lF-c3b"/>
                         </constraints>
                     </view>
