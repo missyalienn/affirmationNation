@@ -11,7 +11,6 @@
 		F6406CF71E39805F00646D4B /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6406CF61E39805F00646D4B /* CustomColors.swift */; };
 		F640862A1E481CCA005ECE49 /* QuotesAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64086291E481CCA005ECE49 /* QuotesAPIClient.swift */; };
 		F64EA14A1E50F8FC00A44547 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64EA1491E50F8FC00A44547 /* LoginView.swift */; };
-		F66228DA1E64CB8000B6F86C /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66228D91E64CB8000B6F86C /* NotesViewController.swift */; };
 		F692522D1E5FCC7700CF1842 /* AffAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692522C1E5FCC7700CF1842 /* AffAPIClient.swift */; };
 		F69AA9AE1E5256E000FFA5F7 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69AA9AD1E5256E000FFA5F7 /* SignupView.swift */; };
 		F69AA9B01E5256F600FFA5F7 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69AA9AF1E5256F600FFA5F7 /* SignupViewController.swift */; };
@@ -57,7 +56,6 @@
 		F6406CF61E39805F00646D4B /* CustomColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		F64086291E481CCA005ECE49 /* QuotesAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesAPIClient.swift; sourceTree = "<group>"; };
 		F64EA1491E50F8FC00A44547 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = ../LoginView.swift; sourceTree = "<group>"; };
-		F66228D91E64CB8000B6F86C /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		F692522C1E5FCC7700CF1842 /* AffAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AffAPIClient.swift; path = ../AffAPIClient.swift; sourceTree = "<group>"; };
 		F69AA9AD1E5256E000FFA5F7 /* SignupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		F69AA9AF1E5256F600FFA5F7 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -165,7 +163,6 @@
 				F69AA9AF1E5256F600FFA5F7 /* SignupViewController.swift */,
 				F6D8547C1E2FBABB00A0EE9A /* ViewController.swift */,
 				F6A71B2F1E5CA351008A9EAE /* AffirmationsViewController.swift */,
-				F66228D91E64CB8000B6F86C /* NotesViewController.swift */,
 			);
 			name = Controller;
 			path = ..;
@@ -426,7 +423,6 @@
 				F6A71B301E5CA351008A9EAE /* AffirmationsViewController.swift in Sources */,
 				F69AA9BA1E5388C300FFA5F7 /* DataStore.swift in Sources */,
 				F64EA14A1E50F8FC00A44547 /* LoginView.swift in Sources */,
-				F66228DA1E64CB8000B6F86C /* NotesViewController.swift in Sources */,
 				F69AA9AE1E5256E000FFA5F7 /* SignupView.swift in Sources */,
 				F6D8547B1E2FBABB00A0EE9A /* AppDelegate.swift in Sources */,
 				F69AA9B81E53876200FFA5F7 /* CardModel.xcdatamodeld in Sources */,

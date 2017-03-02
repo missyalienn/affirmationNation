@@ -3,24 +3,35 @@
     
     [
      
-        {
-        "affTitle": "Life",
-        "affBody": "Today I am grateful for life and everything in it."
-        },
+     {
+     "affTitle": "Life",
+     "affBody": "Today I am grateful for life and everything in it."
+     },
      
-        {
-        "affTitle": "Joy",
-        "affBody": "I am joyful and enthusiastic about my life! To make something joyful, I just need to add joy to it.  So here I go - slathering joy onto life like schmear on a bagel!"
-        },
+     {
+     "affTitle": "Joy",
+     "affBody": "I am joyful and enthusiastic about my life. To make something joyful, I just need to add joy to it! So here I go speading joy on like peanut butter!"
+     },
      
-        {
-        "affTitle": "Let go",
-        "affBody": "I don't dwell on bad things that happened or mean things people say. I let that sh*t go!"
-        },
+     {
+     "affTitle": "Let go",
+     "affBody": "I don't dwell on bad things that happened or mean things people say. I let that sh*t go!"
+     },
      
-             
+     {
+     "affTitle": "Treats",
+     "affBody": "Stressed is desserts spelled backwards, so treat yourself! You're alive!"
+     },
+     
+     {
+     "affTitle": "Growth",
+     "affBody": "Evertyhing will be ok in the end. And if it's not ok, it's not the end!"
+     },
+     
+     {"affTitle": "What you do",
+       "affBody": "The distance between who you are and who want to become is what you do. "
+     }
+     
      ]
 }
-
-
 

@@ -33,7 +33,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fyc-2B-iMA">
                                 <rect key="frame" x="0.0" y="537" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.80000000000000004" green="0.40000000000000002" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Get a quote  ">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -52,7 +52,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nb9-Km-4xy">
                                 <rect key="frame" x="0.0" y="602" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.0" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
                                 <state key="normal" title="  ✨Get an affirmation✨">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -93,32 +93,30 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="affTextLabel" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Kmn-Eu-t8T">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="affTextLabel" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Kmn-Eu-t8T">
                                 <rect key="frame" x="29" y="239" width="330" height="331"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGj-7y-pDa">
-                                <rect key="frame" x="0.0" y="602" width="375" height="65"/>
-                                <color key="backgroundColor" red="0.33762176510422598" green="0.7774409049658606" blue="0.68672325999756711" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="Ydh-Mm-P8N"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpg-hm-rV1">
+                                <rect key="frame" x="0.0" y="601" width="380" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.33762176510000003" green="0.77744090499999996" blue="0.68672325999999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
-                                <state key="normal" title="Affirm It.">
+                                <state key="normal" title="Save">
                                     <color key="titleColor" red="0.40000000000000002" green="0.0" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="cmy-4v-Z5D" kind="show" id="TJB-mm-FUy"/>
+                                    <segue destination="aSD-dH-sYI" kind="show" id="8zG-hm-2O5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WY-xD-zWX">
-                                <rect key="frame" x="0.0" y="538" width="375" height="65"/>
+                                <rect key="frame" x="0.0" y="535" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.88235294119999996" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
-                                <state key="normal" title="  ✨Get a new affirmation✨">
+                                <state key="normal" title="  Get a new affirmation">
                                     <color key="titleColor" red="0.40000000000000002" green="0.0" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -130,13 +128,9 @@
                         <constraints>
                             <constraint firstItem="Nx7-6f-lfw" firstAttribute="top" secondItem="VmA-nn-hh9" secondAttribute="bottom" constant="108" id="BuW-tn-rf0"/>
                             <constraint firstItem="Kmn-Eu-t8T" firstAttribute="top" secondItem="Nx7-6f-lfw" secondAttribute="bottom" constant="53" id="GYf-lu-ZIa"/>
-                            <constraint firstAttribute="trailing" secondItem="sGj-7y-pDa" secondAttribute="trailing" id="P4W-17-bfa"/>
                             <constraint firstItem="Nx7-6f-lfw" firstAttribute="leading" secondItem="SHg-tL-4i6" secondAttribute="leadingMargin" constant="13" id="S44-71-3A7"/>
-                            <constraint firstItem="sGj-7y-pDa" firstAttribute="top" secondItem="Kmn-Eu-t8T" secondAttribute="bottom" constant="32" id="Ur3-W4-dAn"/>
-                            <constraint firstItem="sGj-7y-pDa" firstAttribute="bottom" secondItem="dm1-oY-n0t" secondAttribute="top" id="Wk2-Np-Sc4"/>
                             <constraint firstItem="Nx7-6f-lfw" firstAttribute="trailing" secondItem="SHg-tL-4i6" secondAttribute="trailingMargin" id="bNN-ob-bx4"/>
                             <constraint firstItem="Nx7-6f-lfw" firstAttribute="leading" secondItem="Kmn-Eu-t8T" secondAttribute="leading" id="dsR-YN-2Ux"/>
-                            <constraint firstItem="sGj-7y-pDa" firstAttribute="leading" secondItem="SHg-tL-4i6" secondAttribute="leading" id="h61-rk-geT"/>
                             <constraint firstItem="Nx7-6f-lfw" firstAttribute="trailing" secondItem="Kmn-Eu-t8T" secondAttribute="trailing" id="jl9-lF-c3b"/>
                         </constraints>
                     </view>
@@ -149,35 +143,49 @@
             </objects>
             <point key="canvasLocation" x="869.60000000000002" y="-513.19340329835086"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="qot-by-dD5">
+        <!--Table View Controller-->
+        <scene sceneID="gaM-tz-E7A">
             <objects>
-                <viewController id="v1w-4G-4bF" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="eDD-dJ-h1W"/>
-                        <viewControllerLayoutGuide type="bottom" id="Jta-3U-fWA"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="4TB-3b-8m8">
+                <tableViewController id="aSD-dH-sYI" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="105" sectionHeaderHeight="28" sectionFooterHeight="28" id="hJD-4Z-Nf9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.90000000000000002" contentMode="scaleAspectFit" fixedFrame="YES" text="Start typing your notes here. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2vb-zB-k61">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.88235294119999996" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="textColor" red="0.54175771579999998" green="0.4368807938" blue="0.87196621190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES" flightNumber="YES" lookupSuggestion="YES"/>
-                            </textView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="YhV-wj-RVg"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NKg-dt-7Mt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="UOy-Ib-ZoP" detailTextLabel="yhr-LL-HFd" rowHeight="105" style="IBUITableViewCellStyleSubtitle" id="MOD-Aw-gyC">
+                                <rect key="frame" x="0.0" y="28" width="375" height="105"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MOD-Aw-gyC" id="YWV-K7-wFs">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UOy-Ib-ZoP">
+                                            <rect key="frame" x="15" y="25" width="55" height="35"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yhr-LL-HFd">
+                                            <rect key="frame" x="15" y="60" width="56" height="20"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <color key="highlightedColor" red="0.54175771579999998" green="0.4368807938" blue="0.87196621190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aSD-dH-sYI" id="Kbw-3c-Tcu"/>
+                            <outlet property="delegate" destination="aSD-dH-sYI" id="kzK-Fh-S0a"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dcl-h4-O77" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2612" y="-513.19340329835086"/>
+            <point key="canvasLocation" x="1652" y="-510.49475262368821"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="urR-ir-h6N">
@@ -290,23 +298,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6P7-Jo-wUM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-740" y="-515.8920539730135"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="TJ2-fI-ow8">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="cmy-4v-Z5D" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="Fnl-ec-8Aq">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="v1w-4G-4bF" kind="relationship" relationship="viewControllers" id="NtA-gB-Iwt"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jMR-Rp-HLY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1672.8" y="-513.19340329835086"/>
         </scene>
     </scenes>
     <resources>
