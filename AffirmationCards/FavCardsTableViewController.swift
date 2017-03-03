@@ -103,8 +103,12 @@ class FavCardsTableViewController: UITableViewController {
         
         if let unwrappedEntity  = entity {
             let affCard = NSManagedObject(entity: unwrappedEntity, insertInto: managedContext) as! AffCard
-            affCard.setValue(titleString, forKeyPath: "affTitle")
-            affCard.setValue(bodyString, forKeyPath: "affBody")
+//            affCard.setValue(titleString, forKeyPath: "affTitle")
+//            affCard.setValue(bodyString, forKeyPath: "affBody")
+            
+            affCard.title = titleString
+            affCard.body = bodyString
+            
             
             do {
                 

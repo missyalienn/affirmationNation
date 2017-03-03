@@ -67,10 +67,8 @@ class AffirmationsViewController: UIViewController {
     
     
     @IBAction func favPressed(_ sender: Any) {
-       //figure out how to get affirmation to save
-        saveAffirmation(titleString: "affTitle", bodyString: "affBody")
-        
-        
+       //favoriteCard(card: AffCard)
+       
     }
     
     
@@ -81,8 +79,11 @@ class AffirmationsViewController: UIViewController {
         
         if let unwrappedEntity  = entity {
             let affCard = NSManagedObject(entity: unwrappedEntity, insertInto: managedContext) as! AffCard
-            affCard.setValue(titleString, forKeyPath: "affTitle")
-            affCard.setValue(bodyString, forKeyPath: "affBody")
+//            affCard.setValue(titleString, forKeyPath: "titleString")
+//            affCard.setValue(bodyString, forKeyPath: "bodyString")
+            
+            affCard.title = titleString
+            affCard.body = bodyString
             
             do {
                 
@@ -97,19 +98,36 @@ class AffirmationsViewController: UIViewController {
     }
     
     
+    func favoriteCard(card: AffCard) {
+       let managedContext = store.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "AffCard", in: managedContext)
+        
+        if let unwrappedEntity = entity {
+            let affCard = NSManagedObject(entity: unwrappedEntity, insertInto: managedContext) as! AffCard
+            
+            if card.favorited == true {
+                do{
+                    try managedContext.save()
+                    affCards.append(affCard)
+                    print("saved successfully")
+                    
+                }catch let error as NSError {
+                    print("Not able to save. \(error), \(error.userInfo)")
+                }
+            }
+        }
+        
+    }
+      
+    
+  }
     
     
     
     
     
     
-    
-    
-    
-    
-    
-    
-    
+
     
     
     //            self.affTitleLabel.text = "\(data["affTitle"])"
@@ -118,8 +136,7 @@ class AffirmationsViewController: UIViewController {
     
    
     
-    
-}
+
 
 
 
