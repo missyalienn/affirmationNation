@@ -1,4 +1,13 @@
 //
+//  affVCBackup.swift
+//  AffirmationCards
+//
+//  Created by Missy Allan on 3/3/17.
+//  Copyright © 2017 Missy Allan. All rights reserved.
+//
+
+import Foundation
+//
 //  AffirmationsViewController.swift
 //  AffirmationCards
 //
@@ -8,7 +17,7 @@
 
 import Foundation
 import UIKit
-import CoreData 
+
 
 
 class AffirmationsViewController: UIViewController {
@@ -17,7 +26,7 @@ class AffirmationsViewController: UIViewController {
     @IBOutlet weak var affTitleLabel: UILabel!
     
     @IBOutlet weak var affBodyTextView: UITextView!
-
+    
     var affirmationsArray = [AffirmationCard]()
     
     override func viewDidLoad() {
@@ -33,13 +42,13 @@ class AffirmationsViewController: UIViewController {
             
             self.affTitleLabel.text = randomCard.cardTitle
             self.affBodyTextView.text = randomCard.cardBody
-        
+            
         }
-    
+        
     }
-  
     
-
+    
+    
     @IBAction func getNewAffirmationPressed(_ sender: Any) {
         DispatchQueue.main.async {
             AffAPIClient.readJSON(with: { (affirmationCardArray) in
@@ -57,14 +66,7 @@ class AffirmationsViewController: UIViewController {
     }
     
     
-
     
-    
-    @IBAction func favPressed(_ sender: Any) {
-        
-        
-        
-    }
     
     
     
@@ -75,15 +77,10 @@ class AffirmationsViewController: UIViewController {
     
     //            self.affTitleLabel.text = "\(data["affTitle"])"
     //            self.affBodyTextView.text = "\(data["affBody"])"
-
     
-   
+    
+    
     
     
 }
-
-
-
-
-
 

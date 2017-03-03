@@ -25,8 +25,6 @@ class AffAPIClient {
                     let affDictionaryArray = object["Affirmations"] as! [[String:Any]]
                     var affirmationArray = [AffirmationCard]()
                     for affirmationDict in affDictionaryArray {
-//                        let title = affirmationDict["affTitle"]
-//                        let body = affirmationDict["affBoday"]
                        let affirmationCard = AffirmationCard(dict: affirmationDict)
                         affirmationArray.append(affirmationCard)
                         completion(affirmationArray)
