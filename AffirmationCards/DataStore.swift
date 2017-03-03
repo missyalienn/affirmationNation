@@ -13,18 +13,16 @@ import CoreData
 class DataStore {
     
     
-    static let shared = DataStore()
+    static let sharedInstance = DataStore()
     private init() {}
     
     
-    var cards = [Card]()
+    var affCards = [AffCard]()
     
     var context: NSManagedObjectContext {
-        
         return persistentContainer.viewContext
-        
     }
-    
+
     // MARK: - Core Data stack
     // persistent container holds on to data outside the app
     
@@ -53,50 +51,58 @@ class DataStore {
         }
     }
     
+
+}
     
     
-    func addToFavorites(card: Card) {
-        card.favorited = true
-        do {
-            try context.save()
-        } catch {
-            print("Error adding to favorites")
-        }
-    }
     
-//    func fetchCards() {
-//        let managedContext = store.persistentContainer.viewContext
-//        let fetchRequest: NSFetchRequest<Card> = Card.fetchRequest()
+    
+    
+//    func addToFavorites(card: Card) {
+//        card.favorited = true
 //        do {
-//            self.cards = try managedContext.fetch(fetchRequest)
-//            print(cards.count)
-//           // self.tableView.reloadData()
-//        }catch{
-//         print(error.localizedDescription)
-//            
+//            try context.save()
+//        } catch {
+//            print("Error adding to favorites")
 //        }
-//        
 //    }
+
     
-    func fetchFavorites() -> [Card] {
+//func fetchCards() {
+//    let managedContext = DataStore.persistentContainer.viewContext
+//      let fetchRequest: NSFetchRequest<Card> = Card.fetchRequest()
+//       do {
+//           self.cards = try managedContext.fetch(fetchRequest)
+//           print(cards.count)
+//         self.tableView.reloadData()
+//       }catch{
+//        print(error.localizedDescription)
+//    
+//      }
+//    
+//  }
+    
+
+
+    //func fetchFavorites() -> [Card] {
         //if cards.isEqual to 0 then fetchCards()
 //        //else just filter out the cards that are favorited
 //        if cards.count == 0 {
 //        //    fetchCards()
 //        }else{
-        var favCrds = [Card]()
-        for card in self.cards {
-            if card.favorited == true {
-                favCrds.append(card)
-            }
-        }
-        return favCrds
+       // var favCrds = [Card]()
+       /// for card in self.cards {
+          //  if card.favorited == true {
+             //   favCrds.append(card)
+           // }
+        //}
+      //  return favCrds
         
         
-    }
+    //}
     
     
-    }
+   // }
 
 
 

@@ -12,7 +12,7 @@ import UIKit
 
 class AffirmationCard {
     
-    let cardTitle: String
+    var cardTitle: String
     var cardBody: String
   //var cardImageURL: String // don't store a UIImage in a class.
 //    var description: String {
@@ -42,12 +42,12 @@ class AffirmationCard {
 
 class Quote {
     
-    let author: String
+    var author: String
     var quoteBody: String
     
     init(author: String, quoteBody: String) {
         
-        self.author = "Missy"
+        self.author = author
         self.quoteBody = quoteBody
     }
     

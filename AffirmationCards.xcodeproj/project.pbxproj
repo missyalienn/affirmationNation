@@ -10,9 +10,8 @@
 		2A403DC05CAF23832316D824 /* Pods_AffirmationCards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F6339132EA1DA59A280395 /* Pods_AffirmationCards.framework */; };
 		F6406CF71E39805F00646D4B /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6406CF61E39805F00646D4B /* CustomColors.swift */; };
 		F640862A1E481CCA005ECE49 /* QuotesAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64086291E481CCA005ECE49 /* QuotesAPIClient.swift */; };
-		F64EA14A1E50F8FC00A44547 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64EA1491E50F8FC00A44547 /* LoginView.swift */; };
+		F64275441E69CA1E004E8D53 /* FavCardsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64275431E69CA1E004E8D53 /* FavCardsTableViewController.swift */; };
 		F692522D1E5FCC7700CF1842 /* AffAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692522C1E5FCC7700CF1842 /* AffAPIClient.swift */; };
-		F69AA9AE1E5256E000FFA5F7 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69AA9AD1E5256E000FFA5F7 /* SignupView.swift */; };
 		F69AA9B01E5256F600FFA5F7 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69AA9AF1E5256F600FFA5F7 /* SignupViewController.swift */; };
 		F69AA9B41E53799200FFA5F7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F69AA9B31E53799200FFA5F7 /* GoogleService-Info.plist */; };
 		F69AA9B81E53876200FFA5F7 /* CardModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F69AA9B51E5386A300FFA5F7 /* CardModel.xcdatamodeld */; };
@@ -55,9 +54,8 @@
 		DA9B5D880DB2867A57F2E0F6 /* Pods_AffirmationCardsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AffirmationCardsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6406CF61E39805F00646D4B /* CustomColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		F64086291E481CCA005ECE49 /* QuotesAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesAPIClient.swift; sourceTree = "<group>"; };
-		F64EA1491E50F8FC00A44547 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = ../LoginView.swift; sourceTree = "<group>"; };
+		F64275431E69CA1E004E8D53 /* FavCardsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavCardsTableViewController.swift; path = AffirmationCards/FavCardsTableViewController.swift; sourceTree = "<group>"; };
 		F692522C1E5FCC7700CF1842 /* AffAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AffAPIClient.swift; path = ../AffAPIClient.swift; sourceTree = "<group>"; };
-		F69AA9AD1E5256E000FFA5F7 /* SignupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		F69AA9AF1E5256F600FFA5F7 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		F69AA9B31E53799200FFA5F7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F69AA9B61E5386A300FFA5F7 /* CardModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CardModel.xcdatamodel; sourceTree = "<group>"; };
@@ -142,8 +140,6 @@
 		F6406CF21E397DA500646D4B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F64EA1491E50F8FC00A44547 /* LoginView.swift */,
-				F69AA9AD1E5256E000FFA5F7 /* SignupView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -163,6 +159,7 @@
 				F69AA9AF1E5256F600FFA5F7 /* SignupViewController.swift */,
 				F6D8547C1E2FBABB00A0EE9A /* ViewController.swift */,
 				F6A71B2F1E5CA351008A9EAE /* AffirmationsViewController.swift */,
+				F64275431E69CA1E004E8D53 /* FavCardsTableViewController.swift */,
 			);
 			name = Controller;
 			path = ..;
@@ -422,10 +419,9 @@
 				F692522D1E5FCC7700CF1842 /* AffAPIClient.swift in Sources */,
 				F6A71B301E5CA351008A9EAE /* AffirmationsViewController.swift in Sources */,
 				F69AA9BA1E5388C300FFA5F7 /* DataStore.swift in Sources */,
-				F64EA14A1E50F8FC00A44547 /* LoginView.swift in Sources */,
-				F69AA9AE1E5256E000FFA5F7 /* SignupView.swift in Sources */,
 				F6D8547B1E2FBABB00A0EE9A /* AppDelegate.swift in Sources */,
 				F69AA9B81E53876200FFA5F7 /* CardModel.xcdatamodeld in Sources */,
+				F64275441E69CA1E004E8D53 /* FavCardsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
