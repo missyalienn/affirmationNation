@@ -19,12 +19,8 @@ class FavCardsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        
     }
 
 
@@ -81,6 +77,22 @@ class FavCardsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    
+    func fetchAffCards() {
+        let managedContext = store.persistentContainer.viewContext
+        let fetchRequest: NSFetchRequest<AffCard> = AffCard.fetchRequest()
+        do {
+            self.affCards = try managedContext.fetch(fetchRequest)
+            print(affCards.count)
+            self.tableView.reloadData()
+        }catch{
+            print(error.localizedDescription)
+            
+        }
+        
+    }
     
     
     
