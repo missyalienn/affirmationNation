@@ -78,17 +78,17 @@ class AffirmationsViewController: UIViewController {
         let entity = NSEntityDescription.entity(forEntityName: "AffCard", in: managedContext)
         
         if let unwrappedEntity  = entity {
-            let affCard = NSManagedObject(entity: unwrappedEntity, insertInto: managedContext) as! AffCard
+            let affirmation = NSManagedObject(entity: unwrappedEntity, insertInto: managedContext) as! AffCard
 //            affCard.setValue(titleString, forKeyPath: "titleString")
 //            affCard.setValue(bodyString, forKeyPath: "bodyString")
             
-            affCard.title = titleString
-            affCard.body = bodyString
+            affirmation.title = titleString
+            affirmation.body = bodyString
             
             do {
                 
                 try managedContext.save()
-                affCards.append(affCard)
+                affCards.append(affirmation)
                 print("saved successfully")
             } catch let error as NSError {
                 print ("Not able to save. \(error), \(error.userInfo)")
@@ -97,6 +97,7 @@ class AffirmationsViewController: UIViewController {
         }
     }
     
+
     
     func favoriteCard(card: AffCard) {
        let managedContext = store.persistentContainer.viewContext
@@ -120,21 +121,30 @@ class AffirmationsViewController: UIViewController {
     }
       
     
+    func fetchCards() {
+        
+        let managedContext = store.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<AffCard>(entityName: "AffCard")
+        
+        do {
+            self.affCards = try managedContext.fetch(fetchRequest)
+            print("There are \(affCards.count) affirmation cards.")
+            //self.tableView.reloadData()
+        } catch {
+            print("Error fetching data")
+            print(error.localizedDescription)
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
   }
-    
-    
-    
-    
-    
-    
 
-    
-    
-    //            self.affTitleLabel.text = "\(data["affTitle"])"
-    //            self.affBodyTextView.text = "\(data["affBody"])"
 
-    
-   
     
 
 
