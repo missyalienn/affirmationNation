@@ -14,6 +14,7 @@ class DataStore {
     
     
     static let sharedInstance = DataStore()
+
     private init() {}
     
     
@@ -51,13 +52,37 @@ class DataStore {
         }
     }
     
+    
+    func fetchAffCards() {
+        let managedContext = self.persistentContainer.viewContext
+        let fetchRequest: NSFetchRequest<AffCard> = AffCard.fetchRequest()
+        do {
+            self.affCards = try managedContext.fetch(fetchRequest)
+            print(affCards.count)
+            //self.tableView.reloadData()
+        }catch{
+            print(error.localizedDescription)
+            
+        }
+        
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 }
     
-    
-    
-    
-    
+
+
+
 //    func addToFavorites(card: Card) {
 //        card.favorited = true
 //        do {
@@ -67,42 +92,9 @@ class DataStore {
 //        }
 //    }
 
-    
-//func fetchCards() {
-//    let managedContext = DataStore.persistentContainer.viewContext
-//      let fetchRequest: NSFetchRequest<Card> = Card.fetchRequest()
-//       do {
-//           self.cards = try managedContext.fetch(fetchRequest)
-//           print(cards.count)
-//         self.tableView.reloadData()
-//       }catch{
-//        print(error.localizedDescription)
-//    
-//      }
-//    
-//  }
-    
 
 
-    //func fetchFavorites() -> [Card] {
-        //if cards.isEqual to 0 then fetchCards()
-//        //else just filter out the cards that are favorited
-//        if cards.count == 0 {
-//        //    fetchCards()
-//        }else{
-       // var favCrds = [Card]()
-       /// for card in self.cards {
-          //  if card.favorited == true {
-             //   favCrds.append(card)
-           // }
-        //}
-      //  return favCrds
-        
-        
-    //}
-    
-    
-   // }
+
 
 
 

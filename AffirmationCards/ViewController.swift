@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       navigationController?.navigationBar.isTranslucent = true 
         self.view.backgroundColor = UIColor.themeSunshine
         
         

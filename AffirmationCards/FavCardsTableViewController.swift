@@ -19,9 +19,16 @@ class FavCardsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("running")
+        fetchCards()
+        self.tableView.reloadData()
+        for card in affCards {
+            print ("What is happening?")
+        }
         
         
     }
+    
 
 
 
@@ -41,11 +48,32 @@ class FavCardsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "affirmationCell", for: indexPath)
 
-        // Configure the cell...
+        cell.textLabel?.text = affCards[indexPath.row].title
+        cell.detailTextLabel?.text = affCards[indexPath.row].body
 
         return cell
     }
  
+    
+    func fetchCards() {
+        
+        let managedContext = store.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<AffCard>(entityName: "AffCard")
+        
+        do {
+            self.affCards = try managedContext.fetch(fetchRequest)
+            print("There are \(affCards.count) affirmation cards.")
+            self.tableView.reloadData()
+        } catch {
+            print("Error fetching data")
+            print(error.localizedDescription)
+        }
+    }
+    
+    
+    
+    
+    
 
     
 
