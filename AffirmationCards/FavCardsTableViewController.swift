@@ -22,10 +22,7 @@ class FavCardsTableViewController: UITableViewController {
         print("running")
         fetchCards()
         self.tableView.reloadData()
-        for card in affCards {
-            print ("What is happening?")
-        }
-        
+    
         
     }
     
@@ -50,10 +47,51 @@ class FavCardsTableViewController: UITableViewController {
 
         cell.textLabel?.text = affCards[indexPath.row].title
         cell.detailTextLabel?.text = affCards[indexPath.row].body
-
+       
         return cell
     }
- 
+    
+    
+    
+    
+  // Override to support editing the table view.
+     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+             let savedCard = affCards[indexPath.row]
+    
+        if editingStyle == .delete {
+    
+            let context: NSManagedObjectContext = store.persistentContainer.viewContext
+            context.delete(affCards[indexPath.row] )
+            affCards.remove(at: indexPath.row)
+            do {
+                try context.save()
+            } catch _ {
+                print("Error trying to delete")
+            }
+            
+    
+     tableView.deleteRows(at: [indexPath], with: .fade)
+     } else if editingStyle == .insert {
+     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+     }
+    }
+
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  //MARK: Core Data Save and Fetch
+
     
     func fetchCards() {
         
@@ -69,42 +107,6 @@ class FavCardsTableViewController: UITableViewController {
             print(error.localizedDescription)
         }
     }
-    
-    
-    
-    
-    
-
-    
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-
-    
-    
-    
-    
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     
     

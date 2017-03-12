@@ -38,7 +38,7 @@ class AffirmationsViewController: UIViewController {
             self.affirmationsArray = affirmationCardArray
             
             let randomIndex = Int(arc4random_uniform(UInt32(self.affirmationsArray.count)))
-            var randomCard = self.affirmationsArray[randomIndex]
+            let randomCard = self.affirmationsArray[randomIndex]
             self.savedRandomCard = randomCard
             self.affTitleLabel.text = randomCard.cardTitle
             self.affBodyTextView.text = randomCard.cardBody
@@ -93,7 +93,7 @@ class AffirmationsViewController: UIViewController {
         let managedContext = store.persistentContainer.viewContext
         let entity = NSEntityDescription.entity(forEntityName: "AffCard", in: managedContext)
         
-        if let unwrappedEntity  = entity {
+        if entity != nil {
             let affirmation = AffCard(context: managedContext)
             affirmation.title = titleString
             affirmation.body = bodyString

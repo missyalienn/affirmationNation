@@ -12,7 +12,6 @@
 		F640862A1E481CCA005ECE49 /* QuotesAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64086291E481CCA005ECE49 /* QuotesAPIClient.swift */; };
 		F64275441E69CA1E004E8D53 /* FavCardsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64275431E69CA1E004E8D53 /* FavCardsTableViewController.swift */; };
 		F692522D1E5FCC7700CF1842 /* AffAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692522C1E5FCC7700CF1842 /* AffAPIClient.swift */; };
-		F69AA9B01E5256F600FFA5F7 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69AA9AF1E5256F600FFA5F7 /* SignupViewController.swift */; };
 		F69AA9B41E53799200FFA5F7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F69AA9B31E53799200FFA5F7 /* GoogleService-Info.plist */; };
 		F69AA9B81E53876200FFA5F7 /* CardModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F69AA9B51E5386A300FFA5F7 /* CardModel.xcdatamodeld */; };
 		F69AA9BA1E5388C300FFA5F7 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69AA9B91E5388C300FFA5F7 /* DataStore.swift */; };
@@ -56,7 +55,6 @@
 		F64086291E481CCA005ECE49 /* QuotesAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesAPIClient.swift; sourceTree = "<group>"; };
 		F64275431E69CA1E004E8D53 /* FavCardsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavCardsTableViewController.swift; path = AffirmationCards/FavCardsTableViewController.swift; sourceTree = "<group>"; };
 		F692522C1E5FCC7700CF1842 /* AffAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AffAPIClient.swift; path = ../AffAPIClient.swift; sourceTree = "<group>"; };
-		F69AA9AF1E5256F600FFA5F7 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		F69AA9B31E53799200FFA5F7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F69AA9B61E5386A300FFA5F7 /* CardModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CardModel.xcdatamodel; sourceTree = "<group>"; };
 		F69AA9B91E5388C300FFA5F7 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 		F6C75CC41E493C4000A1FC4A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F69AA9AF1E5256F600FFA5F7 /* SignupViewController.swift */,
 				F6D8547C1E2FBABB00A0EE9A /* ViewController.swift */,
 				F6A71B2F1E5CA351008A9EAE /* AffirmationsViewController.swift */,
 				F64275431E69CA1E004E8D53 /* FavCardsTableViewController.swift */,
@@ -414,7 +411,6 @@
 				F6E03FBA1E511468004D9B37 /* CustomFonts.swift in Sources */,
 				F6D854A91E2FCD2000A0EE9A /* Card.swift in Sources */,
 				F6406CF71E39805F00646D4B /* CustomColors.swift in Sources */,
-				F69AA9B01E5256F600FFA5F7 /* SignupViewController.swift in Sources */,
 				F640862A1E481CCA005ECE49 /* QuotesAPIClient.swift in Sources */,
 				F692522D1E5FCC7700CF1842 /* AffAPIClient.swift in Sources */,
 				F6A71B301E5CA351008A9EAE /* AffirmationsViewController.swift in Sources */,

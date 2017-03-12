@@ -2,10 +2,10 @@ target 'AffirmationCards' do
 use_frameworks!
 
 # Firebase
-pod 'Firebase/Core'
-pod 'Firebase/Auth'
-pod 'Firebase/Database'
-pod 'Firebase/Storage'
+#pod 'Firebase/Core'
+#pod 'Firebase/Auth'
+#pod 'Firebase/Database'
+#pod 'Firebase/Storage'
 
 # XML Parser
 # pod 'SWXMLHash'
