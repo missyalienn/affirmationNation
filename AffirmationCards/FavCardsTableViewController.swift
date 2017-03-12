@@ -22,13 +22,18 @@ class FavCardsTableViewController: UITableViewController {
         print("running")
         fetchCards()
         self.tableView.reloadData()
-    
-        
+
     }
     
-
-
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        fetchCards()
+        tableView.reloadData()
+    }
+    
+    
+    
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
