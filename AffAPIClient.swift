@@ -18,10 +18,10 @@ class AffAPIClient {
                 print("Data - \(data)")
         
                 let json = try JSONSerialization.jsonObject(with: data, options: [])
-                print(json)
+                //print(json)
                 if let object = json as? [String: Any] {
                     //json is a dictionary
-                    print(object)
+                    //print(object)
                     let affDictionaryArray = object["Affirmations"] as! [[String:Any]]
                     var affirmationArray = [AffirmationCard]()
                     for affirmationDict in affDictionaryArray {

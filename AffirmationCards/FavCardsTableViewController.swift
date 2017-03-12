@@ -28,7 +28,7 @@ class FavCardsTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         fetchCards()
-        tableView.reloadData()
+        self.tableView.reloadData()
     }
     
     
@@ -59,35 +59,6 @@ class FavCardsTableViewController: UITableViewController {
     
     
     
-  // Override to support editing the table view.
-     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-             let savedCard = affCards[indexPath.row]
-    
-        if editingStyle == .delete {
-    
-            let context: NSManagedObjectContext = store.persistentContainer.viewContext
-            context.delete(affCards[indexPath.row] )
-            affCards.remove(at: indexPath.row)
-            do {
-                try context.save()
-            } catch _ {
-                print("Error trying to delete")
-            }
-            
-    
-     tableView.deleteRows(at: [indexPath], with: .fade)
-     } else if editingStyle == .insert {
-     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-     }
-    }
-
-   
-    
-    
-    
-    
-    
-    
     
     
     
@@ -114,7 +85,7 @@ class FavCardsTableViewController: UITableViewController {
     }
     
     
-    
+    /*
     func fetchAffCards() {
         let managedContext = store.persistentContainer.viewContext
         let fetchRequest: NSFetchRequest<AffCard> = AffCard.fetchRequest()
@@ -128,9 +99,9 @@ class FavCardsTableViewController: UITableViewController {
         }
         
     }
+    */
     
-    
-    
+    /*
     func saveAffirmation(titleString: String, bodyString: String) {
         
         let managedContext = store.persistentContainer.viewContext
@@ -138,15 +109,10 @@ class FavCardsTableViewController: UITableViewController {
         
         if let unwrappedEntity  = entity {
             let affCard = NSManagedObject(entity: unwrappedEntity, insertInto: managedContext) as! AffCard
-//            affCard.setValue(titleString, forKeyPath: "affTitle")
-//            affCard.setValue(bodyString, forKeyPath: "affBody")
-            
             affCard.title = titleString
             affCard.body = bodyString
             
-            
             do {
-                
                 try managedContext.save()
                 affCards.append(affCard)
                 print("saved successfully")
@@ -156,33 +122,8 @@ class FavCardsTableViewController: UITableViewController {
     
         }
     }
+    */
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
 }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
