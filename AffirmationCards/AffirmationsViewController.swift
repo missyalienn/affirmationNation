@@ -17,12 +17,17 @@ class AffirmationsViewController: UIViewController {
     @IBOutlet weak var affTitleLabel: UILabel!
     
     @IBOutlet weak var affBodyTextView: UITextView!
-
+    
     
     
     var affCards = [AffCard]()
     let store = DataStore.sharedInstance
-    var savedRandomCard: AffirmationCard?
+    var savedRandomCard: AffirmationCard? {
+        didSet {
+            self.affTitleLabel.text = savedRandomCard?.cardTitle
+            self.affBodyTextView.text = savedRandomCard?.cardBody
+        }
+    }
     
     
     
@@ -30,7 +35,7 @@ class AffirmationsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-            navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.isTranslucent = true
         print("hey im being called")
         AffAPIClient.readJSON { (affirmationCardArray) in
             
@@ -42,49 +47,55 @@ class AffirmationsViewController: UIViewController {
             self.savedRandomCard = randomCard
             self.affTitleLabel.text = randomCard.cardTitle
             self.affBodyTextView.text = randomCard.cardBody
-        
-        }
-    
-    }
-  
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        fetchCards()
-        
-    }
-    
-    
-    
-    
-
-    @IBAction func getNewAffirmationPressed(_ sender: Any) {
-        DispatchQueue.main.async {
-            AffAPIClient.readJSON(with: { (affirmationCardArray) in
-                self.affirmationsArray = affirmationCardArray
-                let randomIndex = Int(arc4random_uniform(UInt32(self.affirmationsArray.count)))
-                let randomCard = self.affirmationsArray[randomIndex]
-                
-                self.affTitleLabel.text = randomCard.cardTitle
-                self.affBodyTextView.text = randomCard.cardBody
-                
-            })
             
         }
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        fetchCards()
+    }
     
-
+    
+    
+    
+    
+    @IBAction func getNewAffirmationPressed(_ sender: Any) {
+        AffAPIClient.readJSON(with: { (affirmationCardArray) in
+            self.affirmationsArray = affirmationCardArray
+            let randomIndex = Int(arc4random_uniform(UInt32(self.affirmationsArray.count)))
+            self.savedRandomCard = self.affirmationsArray[randomIndex]
+            
+            
+            
+            
+            
+            
+//            self.savedRandomCard?.cardTitle = randomCard.cardTitle
+//            self.savedRandomCard?.cardBody = randomCard.cardTitle
+//            DispatchQueue.main.async {
+//                
+//                self.affTitleLabel.text = randomCard.cardTitle
+//                self.affBodyTextView.text = randomCard.cardBody
+//                
+//            }
+            
+        })
+        
+    }
+    
+    
+    
     
     
     @IBAction func favPressed(_ sender: Any) {
         
         if let card = savedRandomCard {
-             saveAffirmation(titleString: card.cardTitle, bodyString: card.cardBody)
+            saveAffirmation(titleString: card.cardTitle, bodyString: card.cardBody)
         }
-        print("saved")
-     
-       
+        print("fav pressed touched")
+        
     }
     
     
@@ -110,28 +121,28 @@ class AffirmationsViewController: UIViewController {
         }
     }
     
-
     
-    func favoriteCard(card: AffCard) {
-       let managedContext = store.persistentContainer.viewContext
-        let entity = NSEntityDescription.entity(forEntityName: "AffCard", in: managedContext)
-        
-        if let unwrappedEntity = entity {
-            let affCard = NSManagedObject(entity: unwrappedEntity, insertInto: managedContext) as! AffCard
-            
-            if card.favorited == true {
-                do{
-                    try managedContext.save()
-                    print("saved successfully")
-                    
-                }catch let error as NSError {
-                    print("Not able to save. \(error), \(error.userInfo)")
-                }
-            }
-        }
-        
-    }
-      
+    /*
+     func favoriteCard(card: AffCard) {
+     let managedContext = store.persistentContainer.viewContext
+     let entity = NSEntityDescription.entity(forEntityName: "AffCard", in: managedContext)
+     
+     if let unwrappedEntity = entity {
+     let affCard = NSManagedObject(entity: unwrappedEntity, insertInto: managedContext) as! AffCard
+     
+     if card.favorited == true {
+     do{
+     try managedContext.save()
+     print("saved successfully")
+     
+     }catch let error as NSError {
+     print("Not able to save. \(error), \(error.userInfo)")
+     }
+     }
+     }
+     
+     }
+     */
     
     func fetchCards() {
         
@@ -149,27 +160,27 @@ class AffirmationsViewController: UIViewController {
     }
     
     
-  /*
-    func fetchFavorites() -> [AffCard] {
-        if (affCards.count == 0) {
-            fetchCards()
-        }else{
-            var favCards = [AffCard]()
-            for card in self.affCards {
-                if card.favorited == true {
-                    favCards.append(card)
-                }
-            }
-        }
-        return favCards
-    }
-*/
+    /*
+     func fetchFavorites() -> [AffCard] {
+     if (affCards.count == 0) {
+     fetchCards()
+     }else{
+     var favCards = [AffCard]()
+     for card in self.affCards {
+     if card.favorited == true {
+     favCards.append(card)
+     }
+     }
+     }
+     return favCards
+     }
+     */
     
     
-  }
+}
 
 
-    
+
 
 
 

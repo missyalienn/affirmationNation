@@ -22,10 +22,13 @@ class FavCardsTableViewController: UITableViewController {
         print("running")
         fetchCards()
         self.tableView.reloadData()
-    
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        fetchCards()
+        self.tableView.reloadData()
+    }
 
 
 
@@ -76,18 +79,6 @@ class FavCardsTableViewController: UITableViewController {
      }
     }
 
-   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
   //MARK: Core Data Save and Fetch
