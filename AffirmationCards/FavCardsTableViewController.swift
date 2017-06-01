@@ -22,31 +22,15 @@ class FavCardsTableViewController: UITableViewController {
         print("running")
         fetchCards()
         self.tableView.reloadData()
-<<<<<<< HEAD
-        
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
         fetchCards()
         self.tableView.reloadData()
     }
+   
 
-
-
-=======
-
-    }
-    
-    
-    override func viewWillAppear(_ animated: Bool) {
-        fetchCards()
-        self.tableView.reloadData()
-    }
-    
-    
-    
-    
->>>>>>> 3ba54cdb595580efc26c616c82bf116b331bba61
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -70,9 +54,7 @@ class FavCardsTableViewController: UITableViewController {
     }
     
     
-    
-    
-<<<<<<< HEAD
+
   // Override to support editing the table view.
      override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
              let savedCard = affCards[indexPath.row]
@@ -95,13 +77,7 @@ class FavCardsTableViewController: UITableViewController {
      }
     }
 
-=======
-    
-    
-    
-    
-    
->>>>>>> 3ba54cdb595580efc26c616c82bf116b331bba61
+
     
     
   //MARK: Core Data Save and Fetch
